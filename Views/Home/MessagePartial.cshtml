@@ -1,0 +1,10 @@
+@using TheWall_cSharp.Models
+@model Message
+
+<form asp-action="CreateMessage" asp-controller="Home" method="post">
+    <div class="form-group">
+        <span style="color: red;" asp-validation-for="Text"></span>
+        <textarea asp-for="Text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="enter message"></textarea>
+    </div>
+    <p class="text-center"><button type="submit" class="btn btn-primary">Post</button></p>
+</form>
